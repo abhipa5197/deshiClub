@@ -13,8 +13,8 @@ export class AppComponent {
 
   playMusic() {
   let audio = new Audio();
-  audio.src = "assets/happy-birthday.mp3"; // put mp3 in assets folder
-  audio.load();
+  audio.src = "assets/Mere Samne Wali Khidki Mein.mp3"; // put mp3 in assets folder
+  //audio.load();
   audio.play();
 }
 
