@@ -10,4 +10,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'deshiClub';
+
+  playMusic() {
+  let audio = new Audio();
+  audio.src = "assets/happy-birthday.mp3"; // put mp3 in assets folder
+  audio.load();
+  audio.play();
+}
+
 }
