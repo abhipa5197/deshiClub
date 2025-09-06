@@ -1,0 +1,22 @@
+.stats-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #666;
+}
