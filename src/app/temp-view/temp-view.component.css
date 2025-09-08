@@ -1,0 +1,14 @@
+.image-gallery{
+    position: relative;
+    width: 100vw;
+}
+
+.image-gallery img{
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-text{
+    text-align: center;
+}
