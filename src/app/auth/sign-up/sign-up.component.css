@@ -1,0 +1,139 @@
+:host {
+  display: flex;
+  min-height: 100dvh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.auth-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(2, 6, 23, 0.08);
+  padding: 28px;
+  border: 1px solid #eef2ff;
+}
+
+
+.title {
+  text-align: center;
+  margin: 0 0 4px;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #111827;
+}
+
+.subtitle {
+  text-align: center;
+  margin: 0 0 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  padding: 10px 14px;
+  outline: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+input::placeholder {
+  color: #9ca3af;
+  justify-content: center;
+}
+
+input:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 4px rgba(17, 24, 39, 0.08);
+}
+
+.primary {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #111827, #0b1220);
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.25);
+}
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  color: #9ca3af;
+  font-size: 12px;
+  margin: 14px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  height: 1px;
+  background: #e5e7eb;
+  display: block;
+}
+
+.oauth {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  padding: 10px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #111827;
+  cursor: pointer;
+}
+
+.oauth + .oauth {
+  margin-top: 10px;
+}
+
+.icon {
+  width: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.footer a {
+  color: #111827;
+  text-decoration: underline;
+}
+
+

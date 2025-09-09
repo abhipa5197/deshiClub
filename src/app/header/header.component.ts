@@ -12,7 +12,14 @@ export class HeaderComponent {
    constructor(private router: Router) {}
 
   goToSignIn() {
-    //this.router.navigate(['/sign-in']);
+    this.router.navigate(['/sign-in']);
+  }
+  goToGetStarted(){
+    this.router.navigate(['/']);
+  }
+
+  goHome() {
+    this.router.navigate(['/']);
   }
 
 }
