@@ -1,7 +1,6 @@
 <header class="header">
 <div class="logo">
-<!-- <img src="assets/file.svg" > -->
-<span>Deshi Club</span>
+<span (click)="goHome()" style="cursor: pointer;">Deshi Club</span>
 </div>
 <nav>
 <a href="#">Features</a>
@@ -10,6 +9,6 @@
 </nav>
 <div class="auth-buttons">
 <button class="sign-in" (click)="goToSignIn()" >Sign In</button>
-<button class="get-started">Get Started</button>
+<button class="get-started" (click)="goToGetStarted()" >Get Started</button>
 </div>
 </header>

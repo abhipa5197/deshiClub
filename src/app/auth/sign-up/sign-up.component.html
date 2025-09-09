@@ -1,0 +1,28 @@
+<div class="auth-wrapper">
+  <div class="auth-card">
+    <h2 class="title">Create an account</h2>
+    <p class="subtitle">Please enter your details to create an account.</p>
+
+    <form (submit)="onSendEmailCode(fullName.value, email.value, password.value); $event.preventDefault()">
+      <input id="fullName" #fullName type="text" name="fullName" placeholder="Enter your full name" required>
+
+      <input id="email" #email type="email" name="email" placeholder="Enter your Email" required>
+
+      <input id="password" #password type="password" name="password" placeholder="Create a password" required>
+
+      <button type="submit" class="primary">Submit</button>
+    </form>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <button type="button" class="oauth" (click)="onContinueWithGoogle()">
+      <span class="icon">G</span>
+      <span>Continue with Google</span>
+    </button>
+    <p class="footer">Already have an account?
+      <a routerLink="/sign-in">Sign in</a>
+    </p>
+  </div>
+</div>
